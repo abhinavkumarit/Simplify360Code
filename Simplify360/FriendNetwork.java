@@ -102,5 +102,18 @@ class FriendNetwork {
 
 	        // Find nth connection between Alice and Frank
 	        System.out.println("Nth connection between Alice and Frank: " + network.findNthConnection("Alice", "Frank"));
-	    }
+			
+			//Time Complexity
+
+			//1. addFriend: O(1)
+			//2. getFriends: O(1)
+			//3. getCommonFriends: O(F1) where F1 is the number of friends for one of the people.
+			//4. findNthConnection: O(V + F) where V is the number of people and F is the number of friend connections.
+
+			//Space Complexity
+			//1. friendMap: O(V + F)
+            //2. getCommonFriends: O(min(F1, F2))
+            //3. findNthConnection: O(V)
+		
+		}
 	}

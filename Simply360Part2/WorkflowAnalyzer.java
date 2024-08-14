@@ -1,5 +1,6 @@
 package Simply360Part2;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -93,5 +94,16 @@ public class WorkflowAnalyzer {
         tasks.add(t4);
 
         analyzeWorkflow(tasks);
+
+
+        // Complexity
+
+     //   Time Complexity: O(N * D)
+     //   Space Complexity: O(N * D)
+
+    //  Where:
+    //  N is the number of tasks.
+    //  D is the maximum number of dependencies a task can have.
+
     }
 }
